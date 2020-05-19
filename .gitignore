@@ -1,0 +1,7 @@
+/*.csv
+/uploads/dataset/*
+/__pycache__/*
+/.ipynb_checkpoints/*
+/.env
+/static/df.csv
+/static/data.json

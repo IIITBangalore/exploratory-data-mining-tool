@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+
+	<title>Apriori Output</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+	<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+	<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<!--[if !IE]><!-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Apriori</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">Authors</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header class="bg-primary py-5 mb-5">
+		<div class="container h-100">
+			<div class="row h-100 align-items-center">
+				<div class="col-lg-12">
+					<h1 class="display-4 text-white mt-5 mb-2">Association rule mining using apriori algorithm </h1>
+					<p class="lead mb-5 text-white-50">This is a visualization of the association rules found using python script, using D3.js</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+
+
+	<div class="row">
+		<div class="col-md-8 mb-5">
+			<h2>Apriori rules output</h2>
+			<hr>
+	<!-- <p>Click the table header to sort data according to that column</p> -->
+	<div>
+	{% for rule in rules %}
+ 	<div class="card">
+  <div class="card-header">
+    Rule #{{loop.index0 +1}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{rule['LHS']}} --> {{rule['RHS']}}</h5>
+    <p class="card-text">{{rule['FromCol']}} -->  {{rule['ToCol']}}</p>
+		<button type="button" class="btn btn-primary">Support: {{"%.2f"|format(rule['Support'])}}</button>
+		<button type="button" class="btn btn-info">Confidence: {{"%.2f"|format(rule['Confidence'])}}</button>
+		<button type="button" class="btn btn-success">Lift: {{"%.2f"|format(rule['Lift'])}}</button>
+		<button type="button"  data-html="true" class="btn btn-link" data-toggle="popover" title="More correlations" data-content='
+			<div>
+				Conviction: {{rule['Conviction']}}<br>
+				Cosine: {{"%.2f"|format(rule['Cosine'])}}<br>
+				Jaccard index: {{"%.2f"|format(rule['Jaccard index'])}}<br>
+				Levarage: {{"%.2f"|format(rule['Leverage'])}}<br>
+			</div>
+		'>Click for more</button>
+		<!-- <a href="#" id="popover{{loop.index0}}">the popover link</a>
+		<div id="popover-head" class="hide">
+  		Other correlations
+		</div>
+		<div id="popover-content" class="hide">
+			<div class="card">
+				<div class="card-header">
+						Other correations
+				</div>
+				<div class="card-body">
+					some text
+				</div>
+			</div>
+		</div> -->
+  </div>
+	</div>
+	<br>
+{% endfor %}
+</div>
+</div>
+<div class="col-md-4 mb-5">
+	<h2>Algorithm Inputs</h2>
+	<hr>
+	<div id="accordion1">
+	<div class="card" id="OverviewInfo" >
+		<div class="card-header" id="headingOne">
+			<h5 class="mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Apriori Inputs
+				</button>
+			</h5>
+		</div>
+
+<div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion1">
+<div class="card-body">
+
+		&emsp;&emsp; Minimum Support: {{apriori_inputs[0]}}<br>
+		&emsp;&emsp; Minimum Confidence: {{apriori_inputs[1]}}<br>
+		&emsp;&emsp; Minimum Lift: {{apriori_inputs[2]}}<br>
+
+</div>
+</div>
+</div>
+</div>
+<div id="accordion2">
+<div class="card" id="OverviewInfo2" >
+	<div class="card-header" id="headingTwo">
+		<h5 class="mb-0">
+			<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+				Columns selected
+			</button>
+		</h5>
+	</div>
+
+<div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordion2">
+<div class="card-body">
+	{% for (key,value) in input_cols %}
+	&emsp;&emsp; {{key}}: {{value}}<br>
+	{% endfor %}
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	<!-- <ul>
+	{% for rule in rules %}
+	<li>{{rule}} </li>
+	{% endfor %}
+	</ul> -->
+
+	</div>
+	<footer class="py-5 bg-dark">
+		<div id="about" class="container">
+			<p class="m-0 text-center text-white">ADITYA VIKRAM SRIVASTAVA & VISHESH RUPARELIA <br> IIIT Bangalore</p>
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script> -->
+	<!-- <script type="text/javascript" src="{{ url_for('static', filename='d3.v3.min.js') }}"></script>
+	<script type="text/javascript">
+	  d3.csv("{{ url_for('static', filename= 'df.csv') }}", function(error,data) {
+			if (error) throw error;
+
+		  var sortAscending = true;
+		  var table = d3.select('#page-wrap').append('table');
+		  var titles = d3.keys(data[0]);
+		  var headers = table.append('thead').append('tr')
+		                   .selectAll('th')
+		                   .data(titles).enter()
+		                   .append('th')
+		                   .text(function (d) {
+			                    return d;
+		                    })
+		                   .on('click', function (d) {
+		                	   headers.attr('class', 'header');
+
+		                	   if (sortAscending) {
+		                	     rows.sort(function(a, b) { return d3.ascending(a[d],b[d]); });
+		                	     sortAscending = false;
+		                	     this.className = 'aes';
+		                	   } else {
+		                		 rows.sort(function(a, b) { return d3.descending(a[d],b[d]); });
+		                		 sortAscending = true;
+		                		 this.className = 'des';
+		                	   }
+
+		                   });
+
+		  var rows = table.append('tbody').selectAll('tr')
+		               .data(data).enter()
+		               .append('tr');
+		  rows.selectAll('td')
+		    .data(function (d) {
+		    	return titles.map(function (k) {
+		    		return { 'value': d[k], 'name': k};
+		    	});
+		    }).enter()
+		    .append('td')
+		    .attr('data-th', function (d) {
+		    	return d.name;
+		    })
+		    .text(function (d) {
+		    	return d.value;
+		    });
+	  });
+	</script> -->
+	<script>
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+
+</script>
+
+</body>
+
+</html>

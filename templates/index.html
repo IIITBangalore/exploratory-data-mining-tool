@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <script
+    			  src="https://code.jquery.com/jquery-3.5.1.min.js"
+    			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    			  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <title>Choose dataset</title>
+  </head>
+  <!-- <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.js') }}"></script> -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Mphasis PE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Authors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-primary py-5 mb-5">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-12">
+            <h1 class="display-4 text-white mt-5 mb-2">Exploratory Data Analysis</h1>
+            <p class="lead mb-5 text-white-50">Upload your custom csv based dataset and perform execute datamining algorithms on it.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8 mb-5">
+          <h2>Upload Dataset</h2>
+          <hr>
+
+          <form id="upload-file" action="{{ url_for('upldfile') }}" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <label for="file">Select a file</label>
+              <input name="file" type="file">
+            </fieldset>
+            <fieldset>
+              <button type="submit" class="btn btn-primary">Upload</button>
+              <!-- <button id="upload-file-btn" class="btn btn-primary" type="button">Upload</button> -->
+            </fieldset>
+          </form>
+          <br>
+          {% if flag=='1' %}
+          <p><li><b>{{filename}} uploaded</b>: Mulitvariate (Total Rows: {{rows}})</li> <a class="btn btn-primary" onclick = "overviewinfovis()">Use this &raquo;</a></p>
+          {% endif %}
+          <div class="col-md-8 mb-5" id = 'VisTypeInfo' style = 'display:none'>
+            <h4>Choose mining algorithm</h4>
+            <hr>
+            <td>
+              <form id="upload-file" action="{{ url_for('choosealgo') }}" target="_blank" method="post">
+                <select name="algo_select">
+                <option value="AR">Association Rule mining</option>
+                <option value="C">Clustering</option>
+              <!-- <option value="TM">Tree Map</option> -->
+              <!-- <option value="SB">SunBurst</option> -->
+            </select></td>
+            <button type="submit" class="btn btn-primary">Go!</button>
+          </form>
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div> -->
+          </div>
+
+
+
+        </div>
+        <div class="col-md-4 mb-5">
+          <h2>Dataset Info</h2>
+          <div id="accordion">
+          <div class="card" id="OverviewInfo" style = "display:none">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  {{filename}} column markers
+                </button>
+              </h5>
+            </div>
+
+    <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      {% if mappings is defined%}
+        {% for key,value in mappings.items() %}
+        <br>&emsp;&emsp;{{key}}: {{value}}
+        {% endfor %}
+      {% endif %}
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+      <!-- /.row -->
+
+      <div class="row" >
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <footer class="py-5 bg-dark">
+      <div id="about" class="container">
+        <p class="m-0 text-center text-white">ADITYA VIKRAM SRIVASTAVA & VISHESH RUPARELIA <br> IIIT Bangalore</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+    <script type = "text/javascript">
+      var filenum = 0;
+
+      // function VisTypeInfofunc() {
+      //   var selector1 = document.getElementById('Vistype');
+      //   var type = selector1[selector1.selectedIndex].value;
+      //   if(type == 'AA') {
+      //     document.getElementById('AAcolumns').style.display = "block";
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('FDcolumns').style.display = "none";
+      //   }
+      //   else if (type == 'PC') {
+      //     document.getElementById('PCcolumns').style.display = "block";
+      //     document.getElementById('AAcolumns').style.display = "none";
+      //     document.getElementById('FDcolumns').style.display = "none";
+      //   }
+      //   else if (type == 'FD') {
+      //     document.getElementById('FDcolumns').style.display = "block";
+      //     document.getElementById('AAcolumns').style.display = "none";
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //   }
+      //   else {
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('AAcolumns').style.display = "none";
+      //     document.getElementById('FDcolumns').style.display = "none";
+      //   }
+      // }
+
+      function overviewinfovis(){
+        filenum = 1
+        document.getElementById('OverviewInfo').style.display = "block";
+        // document.getElementById('MPGInfo').style.display = "block";
+        document.getElementById('VisTypeInfo').style.display = "block";
+        var selector1 = document.getElementById('Vistype');
+        var type = selector1[selector1.selectedIndex].value;
+        if(type == 'AA') {
+          document.getElementById('AAcolumns').style.display = "block";
+          document.getElementById('PCcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+        else if (type == 'PC') {
+          document.getElementById('PCcolumns').style.display = "block";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+        else if (type == 'PC') {
+          document.getElementById('FDcolumns').style.display = "block";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('PCcolumns').style.display = "none";
+        }
+        else {
+          document.getElementById('PCcolumns').style.display = "none";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+      }
+
+      // function countryinfovis(){
+      //   filenum = 2;
+      //   document.getElementById('MPGInfo').style.display = "none";
+      //   document.getElementById('VisTypeInfo').style.display = "block";
+      //   document.getElementById('CountryInfo').style.display = "block";
+      //   var selector1 = document.getElementById('Vistype');
+      //   var type = selector1[selector1.selectedIndex].value;
+      //   if(type == 'PC') {
+      //     // document.getElementById('PCcolumns').style.display = "block";
+      //     document.getElementById('TMcolumns').style.display = "none";
+      //     document.getElementById('SBcolumns').style.display = "none";
+      //   }
+      //   else if(type == 'TM') {
+      //     document.getElementById('TMcolumns').style.display = "block";
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('SBcolumns').style.display = "none";
+      //   }
+      //   else if(type == 'SB') {
+      //     document.getElementById('SBcolumns').style.display = "block";
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('TMcolumns').style.display = "none";
+      //   }
+      //   else {
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('TMcolumns').style.display = "none";
+      //     document.getElementById('SBcolumns').style.display = "none";
+      //   }
+      // }
+
+      function PCVisualization() {
+        var columns = document.getElementsByName("pccolumns")[0].value;
+        var color = document.getElementsByName("pccolorcolumn")[0].value;
+        window.open('http://0.0.0.0:5000/PCVisualization/' + filenum + '/' + columns + '/' + color);
+      }
+
+      function AAComputation() {
+        var columns = document.getElementsByName("aacolumns")[0].value;
+        var support = document.getElementsByName("aasupport")[0].value;
+        var conf = document.getElementsByName("aaconfidence")[0].value;
+        var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/Apriori/' + filenum + '/' + columns + '/' + support + '/' + conf + '/' + lift);
+      }
+
+      function FDVisualisation() {
+        var columns = document.getElementsByName("fdcolumns")[0].value;
+        var support = document.getElementsByName("fdsupport")[0].value;
+        var conf = document.getElementsByName("fdconfidence")[0].value;
+        // var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/forcedirected/' + filenum + '/' + columns + '/' + support + '/' + conf);
+      }
+
+      // function SBVisualization() {
+      //   var value = document.getElementsByName("SBvaluecolumn")[0].value;
+      //   var c1 = document.getElementsByName("SBcolumn1")[0].value;
+      //   var c2 = document.getElementsByName("SBcolumn2")[0].value;
+      //   var filter = document.getElementsByName("SBcolumnfilter")[0].value;
+      //   window.open('http://0.0.0.0:5000/SBVisualization/' + filenum + '/' + value + '/' + c1 + '/' + c2 + '/' + filter);
+      // }
+
+    //   $(function() {
+    // $('#upload-file-btn').click(function() {
+    //     var form_data = new FormData($('#upload-file')[0]);
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: '/ajaxupload',
+    //         data: form_data,
+    //         contentType: false,
+    //         cache: false,
+    //         processData: false,
+    //         success: function(data) {
+    //             console.log('Success!');
+    //         },
+    //           });
+    //       });
+    //   });
+    </script>
+
+  </body>
+</html>

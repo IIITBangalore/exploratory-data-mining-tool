@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <title>Clustering algorithms</title>
+  </head>
+  <!-- <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.js') }}"></script> -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Clustering Algorithm Viz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Authors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-primary py-5 mb-5">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-12">
+            <h1 class="display-4 text-white mt-5 mb-2">Clustering data mining on {{filename}} </h1>
+            <p class="lead mb-5 text-white-50">This is a visualization of the Clustering output computed using python script, D3.js, Pyclustering and Plotly</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-8 mb-5">
+          <h2>Available Datasets</h2>
+          <hr>
+          <p><li><b>{{filename}}</b>: Mulitvariate (Total Rows: {{rows}})</li> <a class="btn btn-primary" onclick = "overviewinfovis()">Use this &raquo;</a></p>
+          <div class="col-md-8 mb-5" id = 'VisTypeInfo' style = 'display:none'>
+            <h4>Choose Viz type</h4>
+            <hr>
+            <td><select id = 'Vistype'; onchange="VisTypeInfofunc()">
+              <option value="AC">Agglomerative Clustering</option>
+              <option value="DC">DBSCAN Clustering</option>
+              <option value="KC">K-Means Cluster</option>
+              <option value="KM">K-Modes Cluster</option>
+              <option value="KP">K-Prototype Cluster</option>
+              <!-- <option value="TM">Tree Map</option> -->
+              <!-- <option value="SB">SunBurst</option> -->
+            </select></td>
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-md-8 mb-5" id = 'ACcolumns' style = 'display:none'>
+            <h4>Algorithm inputs for Agglomerative Clustering</h4>
+            <hr>
+            <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Columns</label>
+              <input type="text" class="form-control" name="accolumns" aria-describedby="colsHelp" placeholder="eg: A,J,F">
+              <small id="colsHelp" class="form-text text-muted">These columns will be considered in clustering.<br> Note that only the columns with <b>numerical data</b> are supported.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Number of clusters:</label>
+              <input type="text" class="form-control" name="accluster" placeholder="eg: 2">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Link type:</label>
+              <input type="text" class="form-control" name="aclink" placeholder="eg: Single/Centroid/Average/Complete">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Hover Text:</label>
+              <input type="text" class="form-control" name="achover" placeholder="eg: Feature column">
+            </div>
+            <button  onclick="ACComputation()" class="btn btn-primary">Compute & Visualise</button>
+            </form>
+          </div>
+          <div class="col-md-8 mb-5" id= 'DCcolumns' style = 'display:none'>
+            <h4>Algorithm inputs for DBSCAN Clustering</h4>
+            <hr>
+            <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Columns</label>
+              <input type="text" class="form-control" name="dccolumns" aria-describedby="colsHelp" placeholder="eg: A,J,F">
+              <small id="colsHelp" class="form-text text-muted">These columns will be considered in clustering.<br> Note that only the columns with <b>numerical data</b> are supported.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Connectivity radius between points:</label>
+              <input type="text" class="form-control" name="dcradius" placeholder="eg: 0.2">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Minimum number of shared neighbours:</label>
+              <input type="text" class="form-control" name="dcneighbours" placeholder="eg: 2">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Hover Text:</label>
+              <input type="text" class="form-control" name="dchover" placeholder="eg: Feature column">
+            </div>
+            <button type="submit" onclick="DCComputation()" class="btn btn-primary">Compute & Visualise</button>
+            </form>
+          </div>
+          <div class="col-md-8 mb-5" id = 'KCcolumns' style = 'display:none'>
+            <h4>Algorithm inputs for KMeans Clustering</h4>
+            <hr>
+            <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Columns:</label>
+              <input type="text" class="form-control" name="kccolumns" aria-describedby="colsHelp" placeholder="eg: A,J,F">
+              <small id="colsHelp" class="form-text text-muted">These columns will be considered in clustering.<br> Note that only the columns with <b>numerical data</b> are supported.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Number of Clusters:</label>
+              <input type="text" class="form-control" name="kccluster" placeholder="eg: 3">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Tolerance(Stop Condition):</label>
+              <input type="text" class="form-control" name="kctolerance" placeholder="def: 0.001 ">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Metric of distance:</label>
+              <input type="text" class="form-control" name="kcmetric" placeholder="Manhattan or Euclidean">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Hover Text:</label>
+              <input type="text" class="form-control" name="kchover" placeholder="eg: Feature column">
+            </div>
+            <button type="submit" onclick="KCComputation()" class="btn btn-primary">Compute & Visualise</button>
+            </form>
+          </div>
+          <div class="col-md-8 mb-5" id = 'KMcolumns' style = 'display:none'>
+            <h4>Algorithm inputs for K-Modes Clustering</h4>
+            <hr>
+            <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Columns:</label>
+              <input type="text" class="form-control" name="kmcolumns" aria-describedby="colsHelp" placeholder="eg: A,J,F">
+              <small id="colsHelp" class="form-text text-muted">These columns will be considered in clustering.<br> Note that only the columns with <b>categorical data</b> are supported.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Number of Clusters:</label>
+              <input type="text" class="form-control" name="kmcluster" placeholder="eg: 3">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Centroid value:</label>
+              <input type="text" class="form-control" name="kmcentroid" placeholder="eg: 5">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Hover Text:</label>
+              <input type="text" class="form-control" name="kmhover" placeholder="eg: Feature column">
+            </div>
+            <button type="submit" onclick="KMComputation()" class="btn btn-primary">Compute & Visualise</button>
+            </form>
+          </div>
+          <div class="col-md-8 mb-5" id = 'KPcolumns' style = 'display:none'>
+            <h4>Algorithm inputs for K-Prototype Clustering</h4>
+            <hr>
+            <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Columns:</label>
+              <input type="text" class="form-control" name="kpcolumns" aria-describedby="colsHelp" placeholder="eg: A,J,F">
+              <small id="colsHelp" class="form-text text-muted">These columns will be considered in clustering</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Number of Clusters:</label>
+              <input type="text" class="form-control" name="kpcluster" placeholder="eg: 3">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Categorical Columns:</label>
+              <input type="text" class="form-control" name="kpcategory" aria-describedby="colsHelp2" placeholder="eg: 0,1,2">
+              <small id="colsHelp2" class="form-text text-muted">These are indices of categorical columns in the above given list of columns</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Hover Text:</label>
+              <input type="text" class="form-control" name="kphover" placeholder="eg: Feature column">
+            </div>
+            <button type="submit" onclick="KPComputation()" class="btn btn-primary">Compute & Visualise</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5">
+          <h2>Dataset Info</h2>
+          <div id="accordion">
+          <div class="card" id="OverviewInfo" style = "display:none">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  {{filename}} column markers
+                </button>
+              </h5>
+            </div>
+
+    <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        {% for key,value in mappings.items() %}
+        <br>&emsp;&emsp;{{key}}: {{value}}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+      <!-- /.row -->
+
+      <div class="row" >
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <footer class="py-5 bg-dark">
+      <div id="about" class="container">
+        <p class="m-0 text-center text-white">ADITYA VIKRAM SRIVASTAVA & VISHESH RUPARELIA <br> IIIT Bangalore</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+    <script type = "text/javascript">
+      var filenum = 0;
+
+      function VisTypeInfofunc() {
+        var selector1 = document.getElementById('Vistype');
+        var type = selector1[selector1.selectedIndex].value;
+        if(type == 'AC') {
+          document.getElementById('ACcolumns').style.display = "block";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'DC') {
+          document.getElementById('DCcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'KC') {
+          document.getElementById('KCcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'KM') {
+          document.getElementById('KMcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'KP') {
+          document.getElementById('KPcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+        }
+        else {
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+      }
+
+      function overviewinfovis(){
+        filenum = 1
+        document.getElementById('OverviewInfo').style.display = "block";
+        // document.getElementById('MPGInfo').style.display = "block";
+        document.getElementById('VisTypeInfo').style.display = "block";
+        var selector1 = document.getElementById('Vistype');
+        var type = selector1[selector1.selectedIndex].value;
+        if(type == 'AC') {
+          document.getElementById('ACcolumns').style.display = "block";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'DC') {
+          document.getElementById('DCcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'KC') {
+          document.getElementById('KCcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'KM') {
+          document.getElementById('KMcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+        else if (type == 'KP') {
+          document.getElementById('KPcolumns').style.display = "block";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KCcolumns').style.display = "none";
+        }
+        else {
+          document.getElementById('KCcolumns').style.display = "none";
+          document.getElementById('ACcolumns').style.display = "none";
+          document.getElementById('DCcolumns').style.display = "none";
+          document.getElementById('KMcolumns').style.display = "none";
+          document.getElementById('KPcolumns').style.display = "none";
+        }
+      }
+
+      function DCComputation() {
+        var columns = document.getElementsByName("dccolumns")[0].value;
+        var radius = document.getElementsByName("dcradius")[0].value;
+        var neighbours = document.getElementsByName("dcneighbours")[0].value;
+        var hover = document.getElementsByName("dchover")[0].value;
+        window.open('http://0.0.0.0:5000/DBSCAN/' + filenum + '/' + columns + '/' + radius + '/' + neighbours + '/' + hover);
+      }
+
+      function ACComputation() {
+        var columns = document.getElementsByName("accolumns")[0].value;
+        var nclusters = document.getElementsByName("accluster")[0].value;
+        var link = document.getElementsByName("aclink")[0].value;
+        var hover = document.getElementsByName("achover")[0].value;
+        window.open('http://0.0.0.0:5000/agglomerative/' + filenum + '/' + columns + '/' + nclusters + '/' + link + '/' + hover);
+      }
+
+      function KCComputation() {
+        var columns = document.getElementsByName("kccolumns")[0].value;
+        var nclusters = document.getElementsByName("kccluster")[0].value;
+        var tolerance = document.getElementsByName("kctolerance")[0].value;
+        var metric = document.getElementsByName("kcmetric")[0].value;
+        var hover = document.getElementsByName("kchover")[0].value;
+        // var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/Kmeans/' + filenum + '/' + columns + '/' + nclusters + '/' + tolerance + '/' + metric + '/' + hover);
+      }
+      function KMComputation() {
+        var columns = document.getElementsByName("kmcolumns")[0].value;
+        var nclusters = document.getElementsByName("kmcluster")[0].value;
+        var centroid = document.getElementsByName("kmcentroid")[0].value;
+        var hover = document.getElementsByName("kmhover")[0].value;
+        // var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/Kmodes/' + filenum + '/' + columns + '/' + nclusters + '/' + centroid + '/' + hover);
+      }
+      function KPComputation() {
+        var columns = document.getElementsByName("kpcolumns")[0].value;
+        var nclusters = document.getElementsByName("kpcluster")[0].value;
+        var category = document.getElementsByName("kpcategory")[0].value;
+        var hover = document.getElementsByName("kphover")[0].value;
+        // var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/Kprototypes/' + filenum + '/' + columns + '/' + nclusters + '/' + category + '/' + hover);
+      }
+    </script>
+
+  </body>
+</html>

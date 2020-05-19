@@ -1,0 +1,4802 @@
+[
+{
+"key" : "Bulbasaur",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Ivysaur",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Venusaur",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "VenusaurMega Venusaur",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Charmander",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Charmeleon",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Charizard",
+"region" : "Fire",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "CharizardMega Charizard X",
+"region" : "Fire",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "CharizardMega Charizard Y",
+"region" : "Fire",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Squirtle",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Wartortle",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Blastoise",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "BlastoiseMega Blastoise",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Caterpie",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Metapod",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Butterfree",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Weedle",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Kakuna",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Beedrill",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "BeedrillMega Beedrill",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Pidgey",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Pidgeotto",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Pidgeot",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "PidgeotMega Pidgeot",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Rattata",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Raticate",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Spearow",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Fearow",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Ekans",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Arbok",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Pikachu",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Raichu",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Sandshrew",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Sandslash",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Nidoran♀",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Nidorina",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Nidoqueen",
+"region" : "Poison",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Nidoran♂",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Nidorino",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Nidoking",
+"region" : "Poison",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Clefairy",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Clefable",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Vulpix",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Ninetales",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Jigglypuff",
+"region" : "Normal",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Wigglytuff",
+"region" : "Normal",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Zubat",
+"region" : "Poison",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Golbat",
+"region" : "Poison",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Oddish",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Gloom",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Vileplume",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Paras",
+"region" : "Bug",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Parasect",
+"region" : "Bug",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Venonat",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Venomoth",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Diglett",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Dugtrio",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Meowth",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Persian",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Psyduck",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Golduck",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Mankey",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Primeape",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Growlithe",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Arcanine",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Poliwag",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Poliwhirl",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Poliwrath",
+"region" : "Water",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Abra",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Kadabra",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Alakazam",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "AlakazamMega Alakazam",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Machop",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Machoke",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Machamp",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Bellsprout",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Weepinbell",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Victreebel",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Tentacool",
+"region" : "Water",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Tentacruel",
+"region" : "Water",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Geodude",
+"region" : "Rock",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Graveler",
+"region" : "Rock",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Golem",
+"region" : "Rock",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Ponyta",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Rapidash",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Slowpoke",
+"region" : "Water",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Slowbro",
+"region" : "Water",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "SlowbroMega Slowbro",
+"region" : "Water",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Magnemite",
+"region" : "Electric",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Magneton",
+"region" : "Electric",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Farfetch'd",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Doduo",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Dodrio",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Seel",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Dewgong",
+"region" : "Water",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Grimer",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Muk",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Shellder",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Cloyster",
+"region" : "Water",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Gastly",
+"region" : "Ghost",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Haunter",
+"region" : "Ghost",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Gengar",
+"region" : "Ghost",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "GengarMega Gengar",
+"region" : "Ghost",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Onix",
+"region" : "Rock",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Drowzee",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Hypno",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Krabby",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Kingler",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Voltorb",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Electrode",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Exeggcute",
+"region" : "Grass",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Exeggutor",
+"region" : "Grass",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Cubone",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Marowak",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Hitmonlee",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Hitmonchan",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Lickitung",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Koffing",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Weezing",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Rhyhorn",
+"region" : "Ground",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Rhydon",
+"region" : "Ground",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Chansey",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Tangela",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Kangaskhan",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "KangaskhanMega Kangaskhan",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Horsea",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Seadra",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Goldeen",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Seaking",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Staryu",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Starmie",
+"region" : "Water",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Mr. Mime",
+"region" : "Psychic",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Scyther",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Jynx",
+"region" : "Ice",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Electabuzz",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Magmar",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Pinsir",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "PinsirMega Pinsir",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Tauros",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Magikarp",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Gyarados",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "GyaradosMega Gyarados",
+"region" : "Water",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Lapras",
+"region" : "Water",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Ditto",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Eevee",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Vaporeon",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Jolteon",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Flareon",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Porygon",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Omanyte",
+"region" : "Rock",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Omastar",
+"region" : "Rock",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Kabuto",
+"region" : "Rock",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Kabutops",
+"region" : "Rock",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Aerodactyl",
+"region" : "Rock",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "AerodactylMega Aerodactyl",
+"region" : "Rock",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Snorlax",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Articuno",
+"region" : "Ice",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Zapdos",
+"region" : "Electric",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Moltres",
+"region" : "Fire",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Dratini",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Dragonair",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Dragonite",
+"region" : "Dragon",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Mewtwo",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "MewtwoMega Mewtwo X",
+"region" : "Psychic",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "MewtwoMega Mewtwo Y",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Mew",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Chikorita",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Bayleef",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Meganium",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Cyndaquil",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Quilava",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Typhlosion",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Totodile",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Croconaw",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Feraligatr",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Sentret",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Furret",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Hoothoot",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Noctowl",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Ledyba",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Ledian",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Spinarak",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Ariados",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Crobat",
+"region" : "Poison",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Chinchou",
+"region" : "Water",
+"subregion" : "Electric",
+"value" : 1
+},
+{
+"key" : "Lanturn",
+"region" : "Water",
+"subregion" : "Electric",
+"value" : 1
+},
+{
+"key" : "Pichu",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Cleffa",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Igglybuff",
+"region" : "Normal",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Togepi",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Togetic",
+"region" : "Fairy",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Natu",
+"region" : "Psychic",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Xatu",
+"region" : "Psychic",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Mareep",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Flaaffy",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Ampharos",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "AmpharosMega Ampharos",
+"region" : "Electric",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Bellossom",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Marill",
+"region" : "Water",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Azumarill",
+"region" : "Water",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Sudowoodo",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Politoed",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Hoppip",
+"region" : "Grass",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Skiploom",
+"region" : "Grass",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Jumpluff",
+"region" : "Grass",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Aipom",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Sunkern",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Sunflora",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Yanma",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Wooper",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Quagsire",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Espeon",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Umbreon",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Murkrow",
+"region" : "Dark",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Slowking",
+"region" : "Water",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Misdreavus",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Unown",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Wobbuffet",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Girafarig",
+"region" : "Normal",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Pineco",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Forretress",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Dunsparce",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Gligar",
+"region" : "Ground",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Steelix",
+"region" : "Steel",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "SteelixMega Steelix",
+"region" : "Steel",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Snubbull",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Granbull",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Qwilfish",
+"region" : "Water",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Scizor",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "ScizorMega Scizor",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Shuckle",
+"region" : "Bug",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Heracross",
+"region" : "Bug",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "HeracrossMega Heracross",
+"region" : "Bug",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Sneasel",
+"region" : "Dark",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Teddiursa",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Ursaring",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Slugma",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Magcargo",
+"region" : "Fire",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Swinub",
+"region" : "Ice",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Piloswine",
+"region" : "Ice",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Corsola",
+"region" : "Water",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Remoraid",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Octillery",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Delibird",
+"region" : "Ice",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Mantine",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Skarmory",
+"region" : "Steel",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Houndour",
+"region" : "Dark",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Houndoom",
+"region" : "Dark",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "HoundoomMega Houndoom",
+"region" : "Dark",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Kingdra",
+"region" : "Water",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Phanpy",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Donphan",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Porygon2",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Stantler",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Smeargle",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Tyrogue",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Hitmontop",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Smoochum",
+"region" : "Ice",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Elekid",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Magby",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Miltank",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Blissey",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Raikou",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Entei",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Suicune",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Larvitar",
+"region" : "Rock",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Pupitar",
+"region" : "Rock",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Tyranitar",
+"region" : "Rock",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "TyranitarMega Tyranitar",
+"region" : "Rock",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Lugia",
+"region" : "Psychic",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Ho-oh",
+"region" : "Fire",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Celebi",
+"region" : "Psychic",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Treecko",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Grovyle",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Sceptile",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "SceptileMega Sceptile",
+"region" : "Grass",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Torchic",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Combusken",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Blaziken",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "BlazikenMega Blaziken",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Mudkip",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Marshtomp",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Swampert",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "SwampertMega Swampert",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Poochyena",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Mightyena",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Zigzagoon",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Linoone",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Wurmple",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Silcoon",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Beautifly",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Cascoon",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Dustox",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Lotad",
+"region" : "Water",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Lombre",
+"region" : "Water",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Ludicolo",
+"region" : "Water",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Seedot",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Nuzleaf",
+"region" : "Grass",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Shiftry",
+"region" : "Grass",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Taillow",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Swellow",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Wingull",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Pelipper",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Ralts",
+"region" : "Psychic",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Kirlia",
+"region" : "Psychic",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Gardevoir",
+"region" : "Psychic",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "GardevoirMega Gardevoir",
+"region" : "Psychic",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Surskit",
+"region" : "Bug",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Masquerain",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Shroomish",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Breloom",
+"region" : "Grass",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Slakoth",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Vigoroth",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Slaking",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Nincada",
+"region" : "Bug",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Ninjask",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Shedinja",
+"region" : "Bug",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Whismur",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Loudred",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Exploud",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Makuhita",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Hariyama",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Azurill",
+"region" : "Normal",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Nosepass",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Skitty",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Delcatty",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Sableye",
+"region" : "Dark",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "SableyeMega Sableye",
+"region" : "Dark",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Mawile",
+"region" : "Steel",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "MawileMega Mawile",
+"region" : "Steel",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Aron",
+"region" : "Steel",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Lairon",
+"region" : "Steel",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Aggron",
+"region" : "Steel",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "AggronMega Aggron",
+"region" : "Steel",
+"subregion" : "only Steel",
+"value" : 1
+},
+{
+"key" : "Meditite",
+"region" : "Fighting",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Medicham",
+"region" : "Fighting",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "MedichamMega Medicham",
+"region" : "Fighting",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Electrike",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Manectric",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "ManectricMega Manectric",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Plusle",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Minun",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Volbeat",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Illumise",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Roselia",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Gulpin",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Swalot",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Carvanha",
+"region" : "Water",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Sharpedo",
+"region" : "Water",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "SharpedoMega Sharpedo",
+"region" : "Water",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Wailmer",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Wailord",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Numel",
+"region" : "Fire",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Camerupt",
+"region" : "Fire",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "CameruptMega Camerupt",
+"region" : "Fire",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Torkoal",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Spoink",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Grumpig",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Spinda",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Trapinch",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Vibrava",
+"region" : "Ground",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Flygon",
+"region" : "Ground",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Cacnea",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Cacturne",
+"region" : "Grass",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Swablu",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Altaria",
+"region" : "Dragon",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "AltariaMega Altaria",
+"region" : "Dragon",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Zangoose",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Seviper",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Lunatone",
+"region" : "Rock",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Solrock",
+"region" : "Rock",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Barboach",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Whiscash",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Corphish",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Crawdaunt",
+"region" : "Water",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Baltoy",
+"region" : "Ground",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Claydol",
+"region" : "Ground",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Lileep",
+"region" : "Rock",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Cradily",
+"region" : "Rock",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Anorith",
+"region" : "Rock",
+"subregion" : "Bug",
+"value" : 1
+},
+{
+"key" : "Armaldo",
+"region" : "Rock",
+"subregion" : "Bug",
+"value" : 1
+},
+{
+"key" : "Feebas",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Milotic",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Castform",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Kecleon",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Shuppet",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Banette",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "BanetteMega Banette",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Duskull",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Dusclops",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Tropius",
+"region" : "Grass",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Chimecho",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Absol",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "AbsolMega Absol",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Wynaut",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Snorunt",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Glalie",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "GlalieMega Glalie",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Spheal",
+"region" : "Ice",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Sealeo",
+"region" : "Ice",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Walrein",
+"region" : "Ice",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Clamperl",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Huntail",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Gorebyss",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Relicanth",
+"region" : "Water",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Luvdisc",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Bagon",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Shelgon",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Salamence",
+"region" : "Dragon",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "SalamenceMega Salamence",
+"region" : "Dragon",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Beldum",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Metang",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Metagross",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "MetagrossMega Metagross",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Regirock",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Regice",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Registeel",
+"region" : "Steel",
+"subregion" : "only Steel",
+"value" : 1
+},
+{
+"key" : "Latias",
+"region" : "Dragon",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "LatiasMega Latias",
+"region" : "Dragon",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Latios",
+"region" : "Dragon",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "LatiosMega Latios",
+"region" : "Dragon",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Kyogre",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "KyogrePrimal Kyogre",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Groudon",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "GroudonPrimal Groudon",
+"region" : "Ground",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Rayquaza",
+"region" : "Dragon",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "RayquazaMega Rayquaza",
+"region" : "Dragon",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Jirachi",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "DeoxysNormal Forme",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "DeoxysAttack Forme",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "DeoxysDefense Forme",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "DeoxysSpeed Forme",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Turtwig",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Grotle",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Torterra",
+"region" : "Grass",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Chimchar",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Monferno",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Infernape",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Piplup",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Prinplup",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Empoleon",
+"region" : "Water",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Starly",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Staravia",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Staraptor",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Bidoof",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Bibarel",
+"region" : "Normal",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Kricketot",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Kricketune",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Shinx",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Luxio",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Luxray",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Budew",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Roserade",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Cranidos",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Rampardos",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Shieldon",
+"region" : "Rock",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Bastiodon",
+"region" : "Rock",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Burmy",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "WormadamPlant Cloak",
+"region" : "Bug",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "WormadamSandy Cloak",
+"region" : "Bug",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "WormadamTrash Cloak",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Mothim",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Combee",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Vespiquen",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Pachirisu",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Buizel",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Floatzel",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Cherubi",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Cherrim",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Shellos",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Gastrodon",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Ambipom",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Drifloon",
+"region" : "Ghost",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Drifblim",
+"region" : "Ghost",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Buneary",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Lopunny",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "LopunnyMega Lopunny",
+"region" : "Normal",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Mismagius",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Honchkrow",
+"region" : "Dark",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Glameow",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Purugly",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Chingling",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Stunky",
+"region" : "Poison",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Skuntank",
+"region" : "Poison",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Bronzor",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Bronzong",
+"region" : "Steel",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Bonsly",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Mime Jr.",
+"region" : "Psychic",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Happiny",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Chatot",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Spiritomb",
+"region" : "Ghost",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Gible",
+"region" : "Dragon",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Gabite",
+"region" : "Dragon",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Garchomp",
+"region" : "Dragon",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "GarchompMega Garchomp",
+"region" : "Dragon",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Munchlax",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Riolu",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Lucario",
+"region" : "Fighting",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "LucarioMega Lucario",
+"region" : "Fighting",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Hippopotas",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Hippowdon",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Skorupi",
+"region" : "Poison",
+"subregion" : "Bug",
+"value" : 1
+},
+{
+"key" : "Drapion",
+"region" : "Poison",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Croagunk",
+"region" : "Poison",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Toxicroak",
+"region" : "Poison",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Carnivine",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Finneon",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Lumineon",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Mantyke",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Snover",
+"region" : "Grass",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Abomasnow",
+"region" : "Grass",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "AbomasnowMega Abomasnow",
+"region" : "Grass",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Weavile",
+"region" : "Dark",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Magnezone",
+"region" : "Electric",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Lickilicky",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Rhyperior",
+"region" : "Ground",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Tangrowth",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Electivire",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Magmortar",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Togekiss",
+"region" : "Fairy",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Yanmega",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Leafeon",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Glaceon",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Gliscor",
+"region" : "Ground",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Mamoswine",
+"region" : "Ice",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Porygon-Z",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Gallade",
+"region" : "Psychic",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "GalladeMega Gallade",
+"region" : "Psychic",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Probopass",
+"region" : "Rock",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Dusknoir",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Froslass",
+"region" : "Ice",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Rotom",
+"region" : "Electric",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "RotomHeat Rotom",
+"region" : "Electric",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "RotomWash Rotom",
+"region" : "Electric",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "RotomFrost Rotom",
+"region" : "Electric",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "RotomFan Rotom",
+"region" : "Electric",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "RotomMow Rotom",
+"region" : "Electric",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Uxie",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Mesprit",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Azelf",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Dialga",
+"region" : "Steel",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Palkia",
+"region" : "Water",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Heatran",
+"region" : "Fire",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Regigigas",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "GiratinaAltered Forme",
+"region" : "Ghost",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "GiratinaOrigin Forme",
+"region" : "Ghost",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Cresselia",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Phione",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Manaphy",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Darkrai",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "ShayminLand Forme",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "ShayminSky Forme",
+"region" : "Grass",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Arceus",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Victini",
+"region" : "Psychic",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Snivy",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Servine",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Serperior",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Tepig",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Pignite",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Emboar",
+"region" : "Fire",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Oshawott",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Dewott",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Samurott",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Patrat",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Watchog",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Lillipup",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Herdier",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Stoutland",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Purrloin",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Liepard",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Pansage",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Simisage",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Pansear",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Simisear",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Panpour",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Simipour",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Munna",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Musharna",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Pidove",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Tranquill",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Unfezant",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Blitzle",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Zebstrika",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Roggenrola",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Boldore",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Gigalith",
+"region" : "Rock",
+"subregion" : "only Rock",
+"value" : 1
+},
+{
+"key" : "Woobat",
+"region" : "Psychic",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Swoobat",
+"region" : "Psychic",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Drilbur",
+"region" : "Ground",
+"subregion" : "only Ground",
+"value" : 1
+},
+{
+"key" : "Excadrill",
+"region" : "Ground",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Audino",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "AudinoMega Audino",
+"region" : "Normal",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Timburr",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Gurdurr",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Conkeldurr",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Tympole",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Palpitoad",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Seismitoad",
+"region" : "Water",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Throh",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Sawk",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Sewaddle",
+"region" : "Bug",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Swadloon",
+"region" : "Bug",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Leavanny",
+"region" : "Bug",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Venipede",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Whirlipede",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Scolipede",
+"region" : "Bug",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Cottonee",
+"region" : "Grass",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Whimsicott",
+"region" : "Grass",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Petilil",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Lilligant",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Basculin",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Sandile",
+"region" : "Ground",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Krokorok",
+"region" : "Ground",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Krookodile",
+"region" : "Ground",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Darumaka",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "DarmanitanStandard Mode",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "DarmanitanZen Mode",
+"region" : "Fire",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Maractus",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Dwebble",
+"region" : "Bug",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Crustle",
+"region" : "Bug",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Scraggy",
+"region" : "Dark",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Scrafty",
+"region" : "Dark",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Sigilyph",
+"region" : "Psychic",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Yamask",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Cofagrigus",
+"region" : "Ghost",
+"subregion" : "only Ghost",
+"value" : 1
+},
+{
+"key" : "Tirtouga",
+"region" : "Water",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Carracosta",
+"region" : "Water",
+"subregion" : "Rock",
+"value" : 1
+},
+{
+"key" : "Archen",
+"region" : "Rock",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Archeops",
+"region" : "Rock",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Trubbish",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Garbodor",
+"region" : "Poison",
+"subregion" : "only Poison",
+"value" : 1
+},
+{
+"key" : "Zorua",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Zoroark",
+"region" : "Dark",
+"subregion" : "only Dark",
+"value" : 1
+},
+{
+"key" : "Minccino",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Cinccino",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Gothita",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Gothorita",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Gothitelle",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Solosis",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Duosion",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Reuniclus",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Ducklett",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Swanna",
+"region" : "Water",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Vanillite",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Vanillish",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Vanilluxe",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Deerling",
+"region" : "Normal",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Sawsbuck",
+"region" : "Normal",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Emolga",
+"region" : "Electric",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Karrablast",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Escavalier",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Foongus",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Amoonguss",
+"region" : "Grass",
+"subregion" : "Poison",
+"value" : 1
+},
+{
+"key" : "Frillish",
+"region" : "Water",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Jellicent",
+"region" : "Water",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Alomomola",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Joltik",
+"region" : "Bug",
+"subregion" : "Electric",
+"value" : 1
+},
+{
+"key" : "Galvantula",
+"region" : "Bug",
+"subregion" : "Electric",
+"value" : 1
+},
+{
+"key" : "Ferroseed",
+"region" : "Grass",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Ferrothorn",
+"region" : "Grass",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Klink",
+"region" : "Steel",
+"subregion" : "only Steel",
+"value" : 1
+},
+{
+"key" : "Klang",
+"region" : "Steel",
+"subregion" : "only Steel",
+"value" : 1
+},
+{
+"key" : "Klinklang",
+"region" : "Steel",
+"subregion" : "only Steel",
+"value" : 1
+},
+{
+"key" : "Tynamo",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Eelektrik",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Eelektross",
+"region" : "Electric",
+"subregion" : "only Electric",
+"value" : 1
+},
+{
+"key" : "Elgyem",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Beheeyem",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Litwick",
+"region" : "Ghost",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Lampent",
+"region" : "Ghost",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Chandelure",
+"region" : "Ghost",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Axew",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Fraxure",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Haxorus",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Cubchoo",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Beartic",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Cryogonal",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Shelmet",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Accelgor",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Stunfisk",
+"region" : "Ground",
+"subregion" : "Electric",
+"value" : 1
+},
+{
+"key" : "Mienfoo",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Mienshao",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Druddigon",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Golett",
+"region" : "Ground",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Golurk",
+"region" : "Ground",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Pawniard",
+"region" : "Dark",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Bisharp",
+"region" : "Dark",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Bouffalant",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Rufflet",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Braviary",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Vullaby",
+"region" : "Dark",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Mandibuzz",
+"region" : "Dark",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Heatmor",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Durant",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Deino",
+"region" : "Dark",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Zweilous",
+"region" : "Dark",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Hydreigon",
+"region" : "Dark",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Larvesta",
+"region" : "Bug",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Volcarona",
+"region" : "Bug",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Cobalion",
+"region" : "Steel",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Terrakion",
+"region" : "Rock",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Virizion",
+"region" : "Grass",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "TornadusIncarnate Forme",
+"region" : "Flying",
+"subregion" : "only Flying",
+"value" : 1
+},
+{
+"key" : "TornadusTherian Forme",
+"region" : "Flying",
+"subregion" : "only Flying",
+"value" : 1
+},
+{
+"key" : "ThundurusIncarnate Forme",
+"region" : "Electric",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "ThundurusTherian Forme",
+"region" : "Electric",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Reshiram",
+"region" : "Dragon",
+"subregion" : "Fire",
+"value" : 1
+},
+{
+"key" : "Zekrom",
+"region" : "Dragon",
+"subregion" : "Electric",
+"value" : 1
+},
+{
+"key" : "LandorusIncarnate Forme",
+"region" : "Ground",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "LandorusTherian Forme",
+"region" : "Ground",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Kyurem",
+"region" : "Dragon",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "KyuremBlack Kyurem",
+"region" : "Dragon",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "KyuremWhite Kyurem",
+"region" : "Dragon",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "KeldeoOrdinary Forme",
+"region" : "Water",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "KeldeoResolute Forme",
+"region" : "Water",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "MeloettaAria Forme",
+"region" : "Normal",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "MeloettaPirouette Forme",
+"region" : "Normal",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Genesect",
+"region" : "Bug",
+"subregion" : "Steel",
+"value" : 1
+},
+{
+"key" : "Chespin",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Quilladin",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Chesnaught",
+"region" : "Grass",
+"subregion" : "Fighting",
+"value" : 1
+},
+{
+"key" : "Fennekin",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Braixen",
+"region" : "Fire",
+"subregion" : "only Fire",
+"value" : 1
+},
+{
+"key" : "Delphox",
+"region" : "Fire",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Froakie",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Frogadier",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Greninja",
+"region" : "Water",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Bunnelby",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Diggersby",
+"region" : "Normal",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Fletchling",
+"region" : "Normal",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Fletchinder",
+"region" : "Fire",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Talonflame",
+"region" : "Fire",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Scatterbug",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Spewpa",
+"region" : "Bug",
+"subregion" : "only Bug",
+"value" : 1
+},
+{
+"key" : "Vivillon",
+"region" : "Bug",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Litleo",
+"region" : "Fire",
+"subregion" : "Normal",
+"value" : 1
+},
+{
+"key" : "Pyroar",
+"region" : "Fire",
+"subregion" : "Normal",
+"value" : 1
+},
+{
+"key" : "Flabébé",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Floette",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Florges",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Skiddo",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Gogoat",
+"region" : "Grass",
+"subregion" : "only Grass",
+"value" : 1
+},
+{
+"key" : "Pancham",
+"region" : "Fighting",
+"subregion" : "only Fighting",
+"value" : 1
+},
+{
+"key" : "Pangoro",
+"region" : "Fighting",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Furfrou",
+"region" : "Normal",
+"subregion" : "only Normal",
+"value" : 1
+},
+{
+"key" : "Espurr",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "MeowsticMale",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "MeowsticFemale",
+"region" : "Psychic",
+"subregion" : "only Psychic",
+"value" : 1
+},
+{
+"key" : "Honedge",
+"region" : "Steel",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Doublade",
+"region" : "Steel",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "AegislashBlade Forme",
+"region" : "Steel",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "AegislashShield Forme",
+"region" : "Steel",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "Spritzee",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Aromatisse",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Swirlix",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Slurpuff",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Inkay",
+"region" : "Dark",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Malamar",
+"region" : "Dark",
+"subregion" : "Psychic",
+"value" : 1
+},
+{
+"key" : "Binacle",
+"region" : "Rock",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Barbaracle",
+"region" : "Rock",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Skrelp",
+"region" : "Poison",
+"subregion" : "Water",
+"value" : 1
+},
+{
+"key" : "Dragalge",
+"region" : "Poison",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Clauncher",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Clawitzer",
+"region" : "Water",
+"subregion" : "only Water",
+"value" : 1
+},
+{
+"key" : "Helioptile",
+"region" : "Electric",
+"subregion" : "Normal",
+"value" : 1
+},
+{
+"key" : "Heliolisk",
+"region" : "Electric",
+"subregion" : "Normal",
+"value" : 1
+},
+{
+"key" : "Tyrunt",
+"region" : "Rock",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Tyrantrum",
+"region" : "Rock",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Amaura",
+"region" : "Rock",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Aurorus",
+"region" : "Rock",
+"subregion" : "Ice",
+"value" : 1
+},
+{
+"key" : "Sylveon",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Hawlucha",
+"region" : "Fighting",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Dedenne",
+"region" : "Electric",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Carbink",
+"region" : "Rock",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Goomy",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Sliggoo",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Goodra",
+"region" : "Dragon",
+"subregion" : "only Dragon",
+"value" : 1
+},
+{
+"key" : "Klefki",
+"region" : "Steel",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "Phantump",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Trevenant",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "PumpkabooAverage Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "PumpkabooSmall Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "PumpkabooLarge Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "PumpkabooSuper Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "GourgeistAverage Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "GourgeistSmall Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "GourgeistLarge Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "GourgeistSuper Size",
+"region" : "Ghost",
+"subregion" : "Grass",
+"value" : 1
+},
+{
+"key" : "Bergmite",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Avalugg",
+"region" : "Ice",
+"subregion" : "only Ice",
+"value" : 1
+},
+{
+"key" : "Noibat",
+"region" : "Flying",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Noivern",
+"region" : "Flying",
+"subregion" : "Dragon",
+"value" : 1
+},
+{
+"key" : "Xerneas",
+"region" : "Fairy",
+"subregion" : "only Fairy",
+"value" : 1
+},
+{
+"key" : "Yveltal",
+"region" : "Dark",
+"subregion" : "Flying",
+"value" : 1
+},
+{
+"key" : "Zygarde50% Forme",
+"region" : "Dragon",
+"subregion" : "Ground",
+"value" : 1
+},
+{
+"key" : "Diancie",
+"region" : "Rock",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "DiancieMega Diancie",
+"region" : "Rock",
+"subregion" : "Fairy",
+"value" : 1
+},
+{
+"key" : "HoopaHoopa Confined",
+"region" : "Psychic",
+"subregion" : "Ghost",
+"value" : 1
+},
+{
+"key" : "HoopaHoopa Unbound",
+"region" : "Psychic",
+"subregion" : "Dark",
+"value" : 1
+},
+{
+"key" : "Volcanion",
+"region" : "Fire",
+"subregion" : "Water",
+"value" : 1
+}
+]

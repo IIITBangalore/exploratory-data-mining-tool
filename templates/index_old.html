@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+
+  <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='jquery.downCount.js') }}"></script> -->
+  </head>
+
+  <body>
+    <!-- <div style = "text-align:center"><b> International Instituite Of Information Technology - BANGALORE </b></div> -->
+    <div style = "text-align:center"><b> Course : Project Elective </b></div>
+    <div style = "text-align:center"><b> ASSOCIATION RULE VISUALISATION </b></div>
+    <div style = "text-align:right"><b>Author : ADITYA VIKRAM SRIVASTAVA & VISHESH RUPARELIA </b></div>
+    <br>
+    <p>This is a visualization of the association rules found using python script, using D3.js,  :&emsp;<br>
+&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;<br>
+&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;</p>
+
+    <p>Data Sets available:&emsp;1. Extracted overview : Mulitvariate&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "overviewinfovis()"> Select Data Set </button><br>
+<!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2. Countries of the world data set : Multivariate &emsp;&emsp; <button onclick = "countryinfovis()"> Select Data Set </button><br> -->
+    </p>
+    <p>
+      Total Rows: {{rows}}
+    </p>
+<p id = 'VisTypeInfo'; style = 'display:none'>
+  Select type of Visualization &emsp;
+  <td><select id = 'Vistype'; onchange="VisTypeInfofunc()">
+    <option value="AA">Apriori algo table</option>
+    <option value="FD">Apriori Force Directed</option>
+    <option value="PC">Parallel Coordinates</option>
+    <!-- <option value="TM">Tree Map</option> -->
+    <!-- <option value="SB">SunBurst</option> -->
+  </select></td>
+</p>
+
+<p id = 'AAcolumns'; style = 'display:none'>Select the columns for the association rule finder :
+<input class="form-control col-sm-6" name="aacolumns" type="text" placeholder="Ex:A,C,E,F"><br>
+Minimum Support : <input class="form-control col-sm-6" name="aasupport" type="text" placeholder="Ex: 0.07">
+Minimum Confidence : <input class="form-control col-sm-6" name="aaconfidence" type="text" placeholder="Ex: 0.20">
+Minimum Lift : <input class="form-control col-sm-6" name="aalift" type="text" placeholder="Ex: 3">
+&emsp;<button onclick = "AAComputation()"> Compute </button></p>
+
+<p id = 'FDcolumns'; style = 'display:none'>Select the columns for the Force directed rule finder :
+<input class="form-control col-sm-6" name="fdcolumns" type="text" placeholder="Ex:A,C,E,F"><br>
+Minimum Support : <input class="form-control col-sm-6" name="fdsupport" type="text" placeholder="Ex: 0.07">
+Minimum Confidence : <input class="form-control col-sm-6" name="fdconfidence" type="text" placeholder="Ex: 0.20">
+&emsp;<button onclick = "FDVisualisation()"> Visualise </button></p>
+
+<p id = 'PCcolumns'; style = 'display:none'>Select the columns for the visualization :
+<input class="form-control col-sm-6" name="pccolumns" type="text" placeholder="Ex:A,C,E,F"><br>
+Colour Based on the column : <input class="form-control col-sm-6" name="pccolorcolumn" type="text" placeholder="Ex:A">
+&emsp;<button onclick = "PCVisualization()"> Visualise </button></p>
+
+<!-- <p id = 'TMcolumns'; style = 'display:none'>
+  Value column :<input class="form-control col-sm-6" name="TMvaluecolumn" type="text" placeholder="Ex:A"><br>
+  First level of abstraction based on :<input class="form-control col-sm-6" name="TMcolumn1" type="text" placeholder="Ex:A"><br>
+  Second level of abstraction based on :<input class="form-control col-sm-6" name="TMcolumn2" type="text" placeholder="Ex:A"><br>
+  Filter records based on :<input class="form-control col-sm-6" name="TMcolumnfilter" type="text" placeholder="Ex:A-val">
+  &emsp;<button onclick = "TMVisualization()"> Visualize </button>
+</p> -->
+
+<!-- <p id = 'SBcolumns'; style = 'display:none'>
+  Value column :<input class="form-control col-sm-6" name="SBvaluecolumn" type="text" placeholder="Ex:A"><br>
+  First level of abstraction based on :<input class="form-control col-sm-6" name="SBcolumn1" type="text" placeholder="Ex:A"><br>
+  Second level of abstraction based on :<input class="form-control col-sm-6" name="SBcolumn2" type="text" placeholder="Ex:A"><br>
+  Filter records based on :<input class="form-control col-sm-6" name="SBcolumnfilter" type="text" placeholder="Ex:A-val">
+  &emsp;<button onclick = "SBVisualization()"> Visualize </button>
+</p> -->
+
+<p id ="OverviewInfo"; style = "display:none"><b> Overview Data Set Attribute Information </b>
+  <br>&emsp;&emsp;(A): Zone<br>
+  &emsp;&emsp; (B):PS<br>
+  &emsp;&emsp; (C):Date<br>
+  &emsp;&emsp; (D):Total Arrested<br>
+  &emsp;&emsp; (E):Total Accused<br>
+  &emsp;&emsp; (F):Total Victims<br>
+  &emsp;&emsp; (G):Below 16<br>
+  &emsp;&emsp; (H):Between 16-18<br>
+  &emsp;&emsp; (I):Above 18<br>
+  &emsp;&emsp; (J):Combo<br>
+  &emsp;&emsp; (K):Source of Info<br>
+  &emsp;&emsp; (L):Day<br>
+  &emsp;&emsp; (M):Type of Info<br>
+  &emsp;&emsp; (N):Type of place<br>
+  &emsp;&emsp; (O):Distance from PS<br>
+  &emsp;&emsp; (P):Complainant Occupation<br>
+  &emsp;&emsp; (Q):Complainant Sex<br>
+  &emsp;&emsp; (R):Capacity of complainant<br>
+  &emsp;&emsp; (S):Procedures followed<br>
+  &emsp;&emsp; (T):Panchas available<br>
+  &emsp;&emsp; (U):Case Stage<br>
+  &emsp;&emsp; (V):FIR status<br>
+  &emsp;&emsp; (W):Days b/w FIR and scrutiny<br>
+  &emsp;&emsp; (X):Days b/w scrutiny and CS<br>
+  &emsp;&emsp; (Y):Days b/w CS and commital<br>
+  &emsp;&emsp; (Z):Cash extracted<br>
+  &emsp;&emsp; (AA):Year<br>
+  &emsp;&emsp; (AB):Month<br>
+</p>
+
+<!-- <p id= 'MPGInfo'; style = "display:none"><b>Auto MPG Data Set Attribute Information :</b>
+  <br> &emsp;&emsp;(A):carname<br>
+    &emsp;&emsp; (B):mpg <br>
+    &emsp;&emsp; (C):cylinders <br>
+    &emsp;&emsp; (D):displacement <br>
+    &emsp;&emsp; (E):horsepower <br>
+    &emsp;&emsp; (F):weight <br>
+    &emsp;&emsp; (G):acceleration <br>
+    &emsp;&emsp; (H):model_year <br>
+    &emsp;&emsp; (I):origin <br>
+    &emsp;&emsp; (J):brand </p> -->
+
+<!-- <p id = "CountryInfo"; style = 'display:none'><b>Countries of the world Data Attribute Information :</b>
+  <br>&emsp;&emsp;(A):Country<br>
+    &emsp;&emsp; (B):Continent<br>
+    &emsp;&emsp; (C):Region<br>
+    &emsp;&emsp; (D):Population<br>
+    &emsp;&emsp; (E):Area (sq. mi.)<br>
+    &emsp;&emsp; (F):Pop. Density (per sq. mi.)<br>
+    &emsp;&emsp; (G):Coastline (coast/area ratio)<br>
+    &emsp;&emsp; (H):Net migration<br>
+    &emsp;&emsp; (I):Infant mortality (per 1000 births)<br>
+    &emsp;&emsp; (J):GDP ($ per capita)<br>
+    &emsp;&emsp; (K):Literacy (%)<br>
+    &emsp;&emsp; (L):Phones (per 1000)<br>
+    &emsp;&emsp; (M):Arable (%)<br>
+    &emsp;&emsp; (N):Crops (%)<br>
+    &emsp;&emsp; (O):Other (%)<br>
+    &emsp;&emsp; (P):Climate<br>
+    &emsp;&emsp; (Q):Birthrate<br>
+    &emsp;&emsp; (R):Deathrate<br>
+    &emsp;&emsp; (S):Agriculture<br>
+    &emsp;&emsp; (T):Industry<br>
+    &emsp;&emsp; (U):Service<br>
+  </p> -->
+
+    <script type = "text/javascript">
+      var filenum = 0;
+
+      function VisTypeInfofunc() {
+        var selector1 = document.getElementById('Vistype');
+        var type = selector1[selector1.selectedIndex].value;
+        if(type == 'AA') {
+          document.getElementById('AAcolumns').style.display = "block";
+          document.getElementById('PCcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+        else if (type == 'PC') {
+          document.getElementById('PCcolumns').style.display = "block";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+        else if (type == 'FD') {
+          document.getElementById('FDcolumns').style.display = "block";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('PCcolumns').style.display = "none";
+        }
+        else {
+          document.getElementById('PCcolumns').style.display = "none";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+      }
+
+      function overviewinfovis(){
+        filenum = 1
+        document.getElementById('OverviewInfo').style.display = "block";
+        // document.getElementById('MPGInfo').style.display = "block";
+        document.getElementById('VisTypeInfo').style.display = "block";
+        var selector1 = document.getElementById('Vistype');
+        var type = selector1[selector1.selectedIndex].value;
+        if(type == 'AA') {
+          document.getElementById('AAcolumns').style.display = "block";
+          document.getElementById('PCcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+        else if (type == 'PC') {
+          document.getElementById('PCcolumns').style.display = "block";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+        else if (type == 'PC') {
+          document.getElementById('FDcolumns').style.display = "block";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('PCcolumns').style.display = "none";
+        }
+        else {
+          document.getElementById('PCcolumns').style.display = "none";
+          document.getElementById('AAcolumns').style.display = "none";
+          document.getElementById('FDcolumns').style.display = "none";
+        }
+      }
+
+      // function countryinfovis(){
+      //   filenum = 2;
+      //   document.getElementById('MPGInfo').style.display = "none";
+      //   document.getElementById('VisTypeInfo').style.display = "block";
+      //   document.getElementById('CountryInfo').style.display = "block";
+      //   var selector1 = document.getElementById('Vistype');
+      //   var type = selector1[selector1.selectedIndex].value;
+      //   if(type == 'PC') {
+      //     // document.getElementById('PCcolumns').style.display = "block";
+      //     document.getElementById('TMcolumns').style.display = "none";
+      //     document.getElementById('SBcolumns').style.display = "none";
+      //   }
+      //   else if(type == 'TM') {
+      //     document.getElementById('TMcolumns').style.display = "block";
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('SBcolumns').style.display = "none";
+      //   }
+      //   else if(type == 'SB') {
+      //     document.getElementById('SBcolumns').style.display = "block";
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('TMcolumns').style.display = "none";
+      //   }
+      //   else {
+      //     document.getElementById('PCcolumns').style.display = "none";
+      //     document.getElementById('TMcolumns').style.display = "none";
+      //     document.getElementById('SBcolumns').style.display = "none";
+      //   }
+      // }
+
+      function PCVisualization() {
+        var columns = document.getElementsByName("pccolumns")[0].value;
+        var color = document.getElementsByName("pccolorcolumn")[0].value;
+        window.open('http://0.0.0.0:5000/PCVisualization/' + filenum + '/' + columns + '/' + color);
+      }
+
+      function AAComputation() {
+        var columns = document.getElementsByName("aacolumns")[0].value;
+        var support = document.getElementsByName("aasupport")[0].value;
+        var conf = document.getElementsByName("aaconfidence")[0].value;
+        var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/Apriori/' + filenum + '/' + columns + '/' + support + '/' + conf + '/' + lift);
+      }
+
+      function FDVisualisation() {
+        var columns = document.getElementsByName("fdcolumns")[0].value;
+        var support = document.getElementsByName("fdsupport")[0].value;
+        var conf = document.getElementsByName("fdconfidence")[0].value;
+        // var lift = document.getElementsByName("aalift")[0].value;
+        window.open('http://0.0.0.0:5000/forcedirected/' + filenum + '/' + columns + '/' + support + '/' + conf);
+      }
+
+      // function SBVisualization() {
+      //   var value = document.getElementsByName("SBvaluecolumn")[0].value;
+      //   var c1 = document.getElementsByName("SBcolumn1")[0].value;
+      //   var c2 = document.getElementsByName("SBcolumn2")[0].value;
+      //   var filter = document.getElementsByName("SBcolumnfilter")[0].value;
+      //   window.open('http://0.0.0.0:5000/SBVisualization/' + filenum + '/' + value + '/' + c1 + '/' + c2 + '/' + filter);
+      // }
+
+    </script>
+
+  </body>
+
+</html>
