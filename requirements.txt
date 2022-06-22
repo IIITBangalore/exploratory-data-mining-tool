@@ -14,7 +14,7 @@ apyori == 1.1.2
 kmodes == 0.10.2
 
 # WMSDatamining/cluster.py: 22
-numpy == 1.18.4
+numpy == 1.22.0
 
 # WMSDatamining/cluster.py: 21
 # WMSDatamining/project.py: 4
