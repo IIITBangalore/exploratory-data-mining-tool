@@ -5,7 +5,7 @@
 Flask == 1.1.2
 
 # WMSDatamining/project.py: 13
-Werkzeug == 1.0.1
+Werkzeug == 2.2.3
 
 # WMSDatamining/project.py: 6
 apyori == 1.1.2
